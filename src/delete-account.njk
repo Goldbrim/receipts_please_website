@@ -1,0 +1,68 @@
+---
+layout: layouts/document.njk
+permalink: /delete-account/
+title: Account Deletion
+description: Delete your Receipts, Please. account in the app or request account and cloud data deletion by email without reinstalling it.
+eyebrow: Your account, your choice
+lead: You can delete your Receipts, Please account directly in the app or request deletion by email if you no longer have access to it.
+toc:
+  - { id: in-app, label: Delete in the app }
+  - { id: email, label: Request by email }
+  - { id: data, label: What happens to your data }
+  - { id: subscription, label: Subscriptions }
+  - { id: help, label: Need help? }
+---
+<section id="in-app">
+  <h2>Delete your account in the app</h2>
+  <ol class="steps">
+    <li><span>Open Receipts, Please and go to <strong>Settings</strong>.</span></li>
+    <li><span>Select <strong>My account</strong>.</span></li>
+    <li><span>Tap <strong>Delete account</strong>.</span></li>
+    <li><span>Review the information, type <strong>DELETE</strong>, and confirm.</span></li>
+  </ol>
+  <p>This process deletes your saved purchases and receipt photos from your current device and requests the removal of your account and associated cloud data.</p>
+  <p>If deletion cannot be completed, the app will notify you so you can try again or contact support.</p>
+  <p><strong>Account deletion is permanent.</strong> Export any records you wish to keep before proceeding.</p>
+</section>
+
+<section id="email">
+  <h2>Request deletion without the app</h2>
+  <p>If you’ve uninstalled the app or can no longer access your account, you can request deletion by email.</p>
+  <div class="email-card">
+    <p>Email <a href="mailto:{{ site.email }}"><strong>{{ site.email }}</strong></a> with the subject <strong>Account deletion request</strong> and include the email address associated with your account.</p>
+    <a class="action-link" href="mailto:{{ site.email }}?subject=Account%20deletion%20request"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>Email an account deletion request</a>
+  </div>
+  <p>We may ask you to verify account ownership to protect your information. You will never need to provide your password or receipt photos.</p>
+  <p>Email requests are reviewed manually. Verified deletion requests are processed within 30 days of receipt. We will contact you if additional verification is needed.</p>
+</section>
+
+<section id="data">
+  <h2>What happens to your information?</h2>
+  <p>When you delete your account, we remove:</p>
+  <ul>
+    <li>Your account and profile information.</li>
+    <li>Your saved receipts and purchase history stored in our cloud services.</li>
+    <li>Receipt photos backed up to the cloud.</li>
+    <li>Locally saved records and photos on the device where you delete your account through the app.</li>
+  </ul>
+  <p>If you request deletion by email, we cannot remotely remove information stored only on your device. You can remove that information through your device’s settings. Android device backups may need separate removal.</p>
+  <p>Certain information may remain with independent service providers or be retained where required by law. For more information, see our <a href="/privacy/">Privacy Policy</a>.</p>
+</section>
+
+<section id="subscription">
+  <h2>Subscriptions</h2>
+  <div class="notice"><p><strong>Deleting your account does not automatically cancel an active subscription.</strong></p></div>
+  <p>If you subscribed through Google Play, you must cancel separately:</p>
+  <ol>
+    <li>Visit <a href="https://play.google.com/store/account/subscriptions">Google Play subscriptions</a>.</li>
+    <li>Select Receipts, Please.</li>
+    <li>Follow the cancellation instructions.</li>
+  </ol>
+  <p>Make sure you’re signed in to the Google Account used for your subscription.</p>
+</section>
+
+<section id="help">
+  <h2>Need help?</h2>
+  <p>Contact <a href="mailto:{{ site.email }}">{{ site.email }}</a> with any questions about account deletion or your personal information.</p>
+  <p>You do not need to reinstall the app to request account deletion.</p>
+</section>

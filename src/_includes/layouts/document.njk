@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+---
+<main class="page-main" id="main">
+  <div class="container">
+    <div class="page-intro">
+      <p class="eyebrow">{{ eyebrow }}</p>
+      <h1>{{ title }}</h1>
+      <p class="lead">{{ lead }}</p>
+      {%- if updated %}
+      <p class="updated">Last updated: {{ updated }}</p>
+      {%- endif %}
+    </div>
+    <div class="document-layout">
+      <article class="document">
+        {{ content | safe }}
+      </article>
+      <aside class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        {%- for item in toc %}
+        <a href="#{{ item.id }}">{{ item.label }}</a>
+        {%- endfor %}
+      </aside>
+    </div>
+  </div>
+</main>

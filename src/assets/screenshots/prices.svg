@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 780" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <!-- Placeholder: replace with a real app screenshot (see README). -->
+  <rect width="360" height="780" fill="#fbfaf6"/>
+  <rect x="24" y="22" width="44" height="8" rx="4" fill="#c9d8d6"/>
+  <rect x="292" y="22" width="44" height="8" rx="4" fill="#c9d8d6"/>
+  <text x="24" y="86" font-size="26" font-weight="700" fill="#10243b">Price history</text>
+  <rect x="24" y="112" width="312" height="72" rx="18" fill="#fff" stroke="#e1ebe8"/>
+  <circle cx="58" cy="148" r="18" fill="#dcf3f2"/><rect x="88" y="136" width="120" height="12" rx="6" fill="#10243b"/><rect x="88" y="156" width="80" height="8" rx="4" fill="#c9d8d6"/>
+  <rect x="24" y="202" width="312" height="260" rx="18" fill="#fff" stroke="#e1ebe8"/>
+  <path d="M48 300h264M48 360h264M48 420h264" stroke="#eef3f1" stroke-width="2"/>
+  <path d="M52 400 100 384 148 392 196 338 244 346 300 290" fill="none" stroke="#25636f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="300" cy="290" r="8" fill="#25636f"/>
+  <rect x="44" y="226" width="110" height="22" rx="8" fill="#10243b"/>
+  <rect x="166" y="232" width="52" height="12" rx="6" fill="#f7dd90"/>
+  <rect x="24" y="480" width="150" height="80" rx="16" fill="#ecf9f4"/><rect x="42" y="500" width="70" height="8" rx="4" fill="#9cbfb8"/><rect x="42" y="522" width="96" height="18" rx="6" fill="#25636f"/>
+  <rect x="186" y="480" width="150" height="80" rx="16" fill="#f0ebfa"/><rect x="204" y="500" width="70" height="8" rx="4" fill="#b9a8d4"/><rect x="204" y="522" width="96" height="18" rx="6" fill="#7b5ca6"/>
+  <rect x="70" y="712" width="220" height="36" rx="18" fill="#10243b" opacity=".86"/>
+  <text x="180" y="735" font-size="14" font-weight="600" fill="#fff" text-anchor="middle">Screenshot coming soon</text>
+</svg>

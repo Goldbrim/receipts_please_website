@@ -1,0 +1,7 @@
+[
+  { "label": "Home", "footerLabel": "Home", "url": "/" },
+  { "label": "Privacy", "footerLabel": "Privacy Policy", "url": "/privacy/" },
+  { "label": "Account deletion", "footerLabel": "Account Deletion", "url": "/delete-account/" },
+  { "label": "Terms", "footerLabel": "Terms of Service", "url": "/terms/" },
+  { "label": "Support", "footerLabel": "Support", "url": "/support/" }
+]

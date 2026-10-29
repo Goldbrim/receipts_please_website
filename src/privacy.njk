@@ -1,0 +1,75 @@
+---
+layout: layouts/document.njk
+permalink: /privacy/
+title: Privacy Policy
+description: Read how Receipts, Please. handles receipts, account information, optional cloud storage, and privacy choices.
+eyebrow: Your information
+lead: Receipts, Please helps you organize receipts, track purchases, and better understand your spending.
+updated: October 26, 2026
+toc:
+  - { id: overview, label: Your information }
+  - { id: information, label: Information we collect }
+  - { id: use, label: How we use it }
+  - { id: sharing, label: Sharing and security }
+  - { id: retention, label: How long we keep it }
+  - { id: rights, label: Your choices and rights }
+  - { id: changes, label: Changes }
+  - { id: contact, label: Contact }
+---
+{# TODO before launch: have the policy approver decide whether to add a children's privacy section (minimum age / not directed to children under 13). #}
+<section id="overview">
+  <h2>Your receipts, your information</h2>
+  <p>This Privacy Policy explains how {{ site.company }} (“we”, “us”), the company that makes Receipts, Please, handles information when you use the Receipts, Please mobile app and website.</p>
+</section>
+
+<section id="information">
+  <h2>Information we collect</h2>
+  <p>When you use Receipts, Please, we may handle:</p>
+  <ul>
+    <li><strong>Account information:</strong> Your email address, account details, and preferences.</li>
+    <li><strong>Receipt information:</strong> Photos you scan and purchase details such as stores, items, prices, dates, taxes, and payment information appearing on receipts.</li>
+    <li><strong>Subscription information:</strong> Your subscription status and purchase history related to the app.</li>
+    <li><strong>Technical information:</strong> Limited information necessary to operate, secure, and troubleshoot our services.</li>
+  </ul>
+  <p>If you email us or ask to be notified when the app launches, we receive your email address and any information you include. We use it only to reply to you or to send the launch notice you asked for. The website does not ask you to sign in or upload receipts.</p>
+</section>
+
+<section id="use">
+  <h2>How we use your information</h2>
+  <p>We use your information to provide receipt scanning, organize your purchases, generate spending insights, manage your account and subscription, and maintain the security and reliability of our services.</p>
+  <p>Receipt scanning uses AI technology to extract purchase details. Images are securely transmitted for processing, even when optional Cloud Sync is disabled.</p>
+  <p>Your saved purchase history is stored on your device. You can choose to sync your records across devices and separately choose whether to back up saved receipt photos. Turning off Cloud Sync or photo backup stops new uploads; it does not erase copies already stored in the cloud.</p>
+</section>
+
+<section id="sharing">
+  <h2>How we share and protect information</h2>
+  <p>We work with trusted service providers to process receipts, manage accounts and subscriptions, and provide optional cloud storage. Supabase supports accounts and cloud storage, OpenAI processes receipt scans, RevenueCat checks subscription access, Google Play handles billing, and GitHub Pages hosts this website.</p>
+  <p>We do not sell your personal information or use your receipts for advertising. If you export or share a receipt, the place you send it to will handle that copy.</p>
+  <p>We use reasonable security measures, including encrypted connections and access controls, to protect your information. No digital service can guarantee absolute security.</p>
+  <p>Information may be processed in countries other than your own. Where required, we use appropriate protections for international data transfers.</p>
+</section>
+
+<section id="retention">
+  <h2>How long we keep information</h2>
+  <p>Your locally saved purchase history remains on your device until you remove it or delete the app. Android device backups may keep a separate copy, depending on your device settings.</p>
+  <p>Information stored through optional cloud services is retained until deleted in accordance with your choices and our data retention practices. Turning off a storage option does not delete information already uploaded.</p>
+  <p>Temporary receipt images and processing information are retained only as needed for processing, security, troubleshooting, or applicable legal requirements. Removal can be delayed if processing or cleanup fails. Service providers may keep logs or backups under their own practices; we do not promise a fixed deletion time for those copies.</p>
+</section>
+
+<section id="rights">
+  <h2>Your choices and rights</h2>
+  <p>You can review and edit purchases, export records, manage cloud storage preferences, and request deletion of your account and associated information. You can delete your account in the app or use our <a href="/delete-account/">Account Deletion page</a> to request deletion without reinstalling it. Website requests are processed manually; after we verify ownership, we delete app-controlled account and cloud data within 30 days of receipt. An emailed request cannot erase files on a device you still have.</p>
+  <p>Depending on your location, you may also have rights to access, correct, restrict, or object to certain uses of your personal information, request a portable copy, withdraw consent where applicable, or complain to a relevant data protection authority.</p>
+  <p>We generally use information to provide the services you request, honor your optional storage choices, protect our services, and comply with legal obligations. Contact us to make a request. We may need to verify your account before sharing or deleting information.</p>
+</section>
+
+<section id="changes">
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy as our services evolve. Any changes will be reflected here with an updated date. We will provide additional notice when required.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact us</h2>
+  <p>For privacy questions, requests concerning your personal information, or account deletion, contact {{ site.company }} at:</p>
+  <p><a href="mailto:{{ site.email }}"><strong>{{ site.email }}</strong></a></p>
+</section>
