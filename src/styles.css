@@ -137,7 +137,7 @@ a.store-button:hover { background: var(--teal-dark); color: var(--white); }
 .screens-section { padding-block: 5rem; background: #f4faf7; }
 .screen-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem 2rem; }
 .screen { margin: 0; text-align: center; }
-.screen img { width: min(100%, 360px); height: auto; margin: 0 auto 1.2rem; border-radius: 1rem; box-shadow: var(--shadow); }
+.screen img { width: min(100%, 400px); height: auto; margin: 0 auto 1.2rem; border-radius: 1rem; box-shadow: var(--shadow); }
 .screen figcaption { max-width: 280px; margin-inline: auto; color: var(--ink-soft); }
 .screen figcaption strong { display: block; color: var(--ink); font-size: 1.1rem; }
 
@@ -192,7 +192,7 @@ a.store-button:hover { background: var(--teal-dark); color: var(--white); }
   .document-layout { grid-template-columns: 1fr; }
   .toc { position: static; grid-row: 1; }
   .toc a { display: inline-block; padding: .35rem .7rem .35rem 0; }
-  .screen-grid { gap: 1.2rem; }
+  .screen-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .faq-layout, .notify-card { grid-template-columns: 1fr; gap: 1.5rem; }
 }
 @media (max-width: 610px) {
@@ -218,8 +218,6 @@ a.store-button:hover { background: var(--teal-dark); color: var(--white); }
   .document h2 { font-size: 1.37rem; }
   .screens-section, .faq-section { padding-block: 3.5rem; }
   .notify-section { padding-bottom: 4rem; }
-  .screen-grid { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 74%; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: .75rem; }
-  .screen { scroll-snap-align: center; }
   .notify-row { flex-direction: column; }
   .not-found { grid-template-columns: 1fr; gap: 1rem; }
   .not-found img { width: 180px; }
