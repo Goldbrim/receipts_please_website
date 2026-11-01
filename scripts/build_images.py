@@ -51,6 +51,23 @@ def save_png(image, name):
     print(f"{name:28} {path.stat().st_size / 1024:7.1f} KB")
 
 
+def save_screenshots():
+    """Convert the full-size promotional screenshots without resizing them."""
+    screenshots = {
+        "receipts_please_4.png": "home.webp",
+        "receipts_please_3.png": "receipt-search.webp",
+        "receipts_please_1.png": "spending-categories.webp",
+        "receipts_please_2.png": "item-prices.webp",
+    }
+    output_dir = OUT / "screenshots"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    for source, target in screenshots.items():
+        with Image.open(ART / "screenshots" / source) as image:
+            path = output_dir / target
+            image.convert("RGB").save(path, "WEBP", quality=90, method=6)
+        print(f"{target:28} {path.stat().st_size / 1024:7.1f} KB")
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     icon = square(Image.open(ART / "icon.png").convert("RGBA"))
@@ -86,6 +103,7 @@ def main():
     draw.text((76, 300), "Please.", font=font("NotoSans-Bold.ttf", 96), fill=INK)
     draw.text((80, 440), "A smarter home for your receipts.", font=font("NotoSans-Regular.ttf", 36), fill=INK_SOFT)
     save_png(card, "og-image.png")
+    save_screenshots()
 
 
 if __name__ == "__main__":

@@ -4,15 +4,30 @@ permalink: /
 description: Receipts, Please. helps you save receipts, understand spending, and track prices over time. A smarter home for your receipts.
 structuredData: true
 screenshots:
-  - file: scan.svg
-    title: Scan in seconds
-    text: Snap a receipt and the store, items, and prices are pulled out for you.
-  - file: spending.svg
-    title: See your spending
-    text: Explore trends by store, category, and individual item.
-  - file: prices.svg
-    title: Follow prices
-    text: Look back at what you paid and spot how prices change.
+  - file: home.webp
+    width: 526
+    height: 934
+    alt: Receipts, Please. home screen showing the library and recent receipts
+    title: Keep it together
+    text: Find your receipts, stores, and items in one tidy place.
+  - file: receipt-search.webp
+    width: 525
+    height: 935
+    alt: Receipts screen with search, filters, and saved receipts grouped by month
+    title: Find a receipt
+    text: Search your saved receipts by store or item.
+  - file: spending-categories.webp
+    width: 526
+    height: 934
+    alt: Categories screen with a spending chart and category totals
+    title: Understand your spending
+    text: See how your purchases break down by category.
+  - file: item-prices.webp
+    width: 524
+    height: 934
+    alt: Items and prices screen listing frequently purchased products and their prices
+    title: Look up item prices
+    text: Review what you bought and what each item cost.
 faq:
   - q: When will Receipts, Please. be available?
     a: Receipts, Please. is coming soon to Android on Google Play. <a href="#notify">Ask to be notified</a> and we’ll let you know when it launches.
@@ -95,7 +110,7 @@ faq:
       <div class="screen-grid">
         {%- for shot in screenshots %}
         <figure class="screen">
-          <div class="phone"><img src="/assets/screenshots/{{ shot.file }}" width="360" height="780" alt="{{ shot.title }} screen (preview image coming soon)" loading="lazy" decoding="async"></div>
+          <img src="/assets/screenshots/{{ shot.file }}" width="{{ shot.width }}" height="{{ shot.height }}" alt="{{ shot.alt }}" loading="lazy" decoding="async">
           <figcaption><strong>{{ shot.title }}</strong>{{ shot.text }}</figcaption>
         </figure>
         {%- endfor %}

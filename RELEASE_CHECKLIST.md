@@ -13,7 +13,7 @@
 - [ ] Publish the repository to GitHub, set **Settings → Pages → Source** to **GitHub Actions**, configure the `www.receiptsplease.app` custom domain, enable Enforce HTTPS, and verify HTTPS plus direct, publicly accessible 200 responses for all five routes without sign-in or PDF delivery. Confirm `robots.txt`, `sitemap.xml`, and the 404 page are served.
 - [ ] Check mobile and desktop layout, keyboard navigation, readable text, all internal links and assets, and reduced-motion behavior on the deployed site.
 - [ ] Check the social preview by pasting the URL into a messaging app or a link-preview checker.
-- [ ] Replace the placeholder app screenshots with real ones (see README).
+- [ ] Verify all four app screenshots look sharp and appear in the correct order on the live site.
 - [ ] Put `https://www.receiptsplease.app/privacy/` and `https://www.receiptsplease.app/delete-account/` into the correct Google Play Console fields. Leave `playStoreUrl` empty in `src/_data/site.json` until the verified Play listing URL exists.
 
 ## App and Google Play

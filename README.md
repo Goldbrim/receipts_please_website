@@ -58,16 +58,13 @@ pip install Pillow
 npm run images
 ```
 
-This makes the logo, favicons, app icons, the hero mascot, and the 1200×630 social preview card (`og-image.png`).
+This makes the logo, favicons, app icons, the hero mascot, the 1200×630 social preview card (`og-image.png`), and the homepage WebP screenshots.
 
-### Replacing the placeholder app screenshots
+### Updating the app screenshots
 
-`src/assets/screenshots/scan.svg`, `spending.svg`, and `prices.svg` are placeholders. To use real screenshots:
+The four original promotional images live in `art/screenshots/`. `npm run images` converts them to WebP in `src/assets/screenshots/` at their original dimensions (quality 90, method 6). The generated WebP files are committed and published; the PNG originals are not.
 
-1. Export phone screenshots (portrait, roughly 9:19.5, such as 1080×2340) as `.png` or `.webp`.
-2. Put them in `src/assets/screenshots/`.
-3. In the `screenshots:` list at the top of `src/index.njk`, change each `file:` to the new filename. Adjust the titles and captions if needed.
-4. In the same file, remove `(preview image coming soon)` from the screenshot `alt` text.
+To update the gallery, replace the corresponding PNG in `art/screenshots/`, run `npm run images`, and check the titles, captions, alt text, and dimensions in the `screenshots:` list at the top of `src/index.njk`.
 
 ## Copyright
 
