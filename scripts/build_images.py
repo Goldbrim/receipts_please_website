@@ -64,7 +64,7 @@ def save_screenshots():
     for source, target in screenshots.items():
         with Image.open(ART / "screenshots" / source) as image:
             path = output_dir / target
-            image.convert("RGB").save(path, "WEBP", quality=90, method=6)
+            image.convert("RGB").save(path, "WEBP", quality=100, method=6)
         print(f"{target:28} {path.stat().st_size / 1024:7.1f} KB")
 
 

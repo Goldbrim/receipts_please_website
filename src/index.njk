@@ -110,7 +110,7 @@ faq:
       <div class="screen-grid">
         {%- for shot in screenshots %}
         <figure class="screen">
-          <img src="/assets/screenshots/{{ shot.file }}" width="{{ shot.width }}" height="{{ shot.height }}" alt="{{ shot.alt }}" loading="lazy" decoding="async">
+          <img src="/assets/screenshots/{{ shot.file }}?v={{ build.assetVersion }}" width="{{ shot.width }}" height="{{ shot.height }}" alt="{{ shot.alt }}" loading="lazy" decoding="async">
           <figcaption><strong>{{ shot.title }}</strong>{{ shot.text }}</figcaption>
         </figure>
         {%- endfor %}

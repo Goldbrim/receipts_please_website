@@ -62,7 +62,7 @@ This makes the logo, favicons, app icons, the hero mascot, the 1200×630 social 
 
 ### Updating the app screenshots
 
-The four original promotional images live in `art/screenshots/`. `npm run images` converts them to WebP in `src/assets/screenshots/` at their original dimensions (quality 90, method 6). The generated WebP files are committed and published; the PNG originals are not.
+The four original promotional images live in `art/screenshots/`. `npm run images` converts them to WebP in `src/assets/screenshots/` at their original dimensions (quality 100, method 6) to keep fine text sharp. The generated WebP files are committed and published; the PNG originals are not. The build adds a content version to the stylesheet and screenshot URLs so visitors receive updated assets promptly.
 
 To update the gallery, replace the corresponding PNG in `art/screenshots/`, run `npm run images`, and check the titles, captions, alt text, and dimensions in the `screenshots:` list at the top of `src/index.njk`.
 
